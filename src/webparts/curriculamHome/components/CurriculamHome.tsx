@@ -1,43 +1,111 @@
 import * as React from 'react';
 import styles from './CurriculamHome.module.scss';
 import { ICurriculamHomeProps } from './ICurriculamHomeProps';
-import { escape } from '@microsoft/sp-lodash-subset';
+import { Checkbox, Tab, TabList, Divider, SelectTabEvent, SelectTabData, Button } from "@fluentui/react-components";
+import * as data from "../data/CurriculamData.json";
+export interface ICurriculamHomeStates {
+  learnings: any;
+  selectedTab: string;
+}
+export default class CurriculamHome extends React.Component<ICurriculamHomeProps, ICurriculamHomeStates> {
+  constructor(props: ICurriculamHomeProps) {
+    super(props);
+    this.state = {
+      learnings: data.learnings,
+      selectedTab: "tab1"
+    };
+  }
 
-export default class CurriculamHome extends React.Component<ICurriculamHomeProps, {}> {
-  public render(): React.ReactElement<ICurriculamHomeProps> {
-    const {
-      description,
-      isDarkTheme,
-      environmentMessage,
-      hasTeamsContext,
-      userDisplayName
-    } = this.props;
+  private onTabSelect = (_event: SelectTabEvent, data: SelectTabData) => {
+    this.setState({ selectedTab: data.value as string });
+  };
 
+  private getCourseCard = (courseItem: any) => {
     return (
-      <section className={`${styles.curriculamHome} ${hasTeamsContext ? styles.teams : ''}`}>
-        <div className={styles.welcome}>
-          <img alt="" src={isDarkTheme ? require('../assets/welcome-dark.png') : require('../assets/welcome-light.png')} className={styles.welcomeImage} />
-          <h2>Well done, {escape(userDisplayName)}!</h2>
-          <div>{environmentMessage}</div>
-          <div>Web part property value: <strong>{escape(description)}</strong></div>
+      <div className={styles.courseCardWrapper}>
+        <div className={styles.imgDescriptionWrapper}>
+          <img src={require("../assets/images/" + courseItem.type + ".png")}
+            alt={courseItem.type} className={styles.courseTypeImg} />
+          <div className={styles.courseDescriptionArea}>
+            <span className={styles.courseName}>{courseItem.name}</span>
+            <div className={styles.courseNameAndDurationDetails}>
+              <div className={styles.courseType + " " + styles[courseItem.type + "Background"]}>{courseItem.type.toUpperCase()}</div>
+              <div className={styles.courseTimeAndCredits}><b>Time:</b> {courseItem.time}</div>
+              <div className={styles.courseTimeAndCredits}><b>CPE Credit:</b> {courseItem.cpeCreditTime}</div>
+            </div>
+            <p>{courseItem.description}</p>
+          </div>
         </div>
-        <div>
-          <h3>Welcome to SharePoint Framework!</h3>
-          <p>
-            The SharePoint Framework (SPFx) is a extensibility model for Microsoft Viva, Microsoft Teams and SharePoint. It&#39;s the easiest way to extend Microsoft 365 with automatic Single Sign On, automatic hosting and industry standard tooling.
-          </p>
-          <h4>Learn more about SPFx development:</h4>
-          <ul className={styles.links}>
-            <li><a href="https://aka.ms/spfx" target="_blank" rel="noreferrer">SharePoint Framework Overview</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-graph" target="_blank" rel="noreferrer">Use Microsoft Graph in your solution</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-teams" target="_blank" rel="noreferrer">Build for Microsoft Teams using SharePoint Framework</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-viva" target="_blank" rel="noreferrer">Build for Microsoft Viva Connections using SharePoint Framework</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-store" target="_blank" rel="noreferrer">Publish SharePoint Framework applications to the marketplace</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-api" target="_blank" rel="noreferrer">SharePoint Framework API reference</a></li>
-            <li><a href="https://aka.ms/m365pnp" target="_blank" rel="noreferrer">Microsoft 365 Developer Community</a></li>
-          </ul>
+        <div className={styles.markAsCompleteAndRegisterBtnWrapper}>
+          <Checkbox label="Mark as Complete" />
+          <Button>Register</Button>
         </div>
-      </section>
+      </div>
+    );
+  }
+  public render(): React.ReactElement<ICurriculamHomeProps> {
+    return (
+      <div className={styles.mainContiner}>
+        <h1 className={styles.mainHeading}>Curriculam Roadmap</h1>
+        <p className={styles.description1}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+          nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+          qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <p className={styles.description2}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+          nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+          qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <div className={styles.filterWrapper}>
+          <div className={styles.serviceLineWrapper}>
+            <h3 className={styles.filterHeading}>Choose the service line</h3>
+            <Divider className={styles.divider} />
+            <div>
+              <Checkbox label="Checked" className={styles.filterCheckbox} />
+            </div>
+          </div>
+          <div className={styles.levelWrapper}>
+            <h3 className={styles.filterHeading}>Click on the level you would like explore</h3>
+            <Divider className={styles.divider} />
+            <div>
+              <Checkbox label="Checked" className={styles.filterCheckbox} />
+            </div>
+          </div>
+        </div>
+        <h3 className={styles.myLearningsLabel}>My Learnings</h3>
+        <div className={styles.learningsWrapper}>
+          <TabList className={styles.learningsTabList} selectedValue={this.state.selectedTab} onTabSelect={this.onTabSelect}>
+            <Tab value="tab1">All Programs/Trainings</Tab>
+            <Tab value="tab2">Milestone Program</Tab>
+            <Tab value="tab3">Technical Training</Tab>
+            <Tab value="tab4">Badge Completion</Tab>
+            <Tab value="tab5">Other Required/Mandatory Training</Tab>
+          </TabList>
+          <Divider className={styles.solidDivider} />
+          <div>
+            {this.state.selectedTab === "tab1" && (
+              <div>
+                {this.getCourseCard(this.state.learnings[0])}
+              </div>
+            )}
+            {this.state.selectedTab === "tab2" && (
+              <div>tab2</div>
+            )}
+            {this.state.selectedTab === "tab3" && (
+              <div>tab3</div>
+            )}
+            {this.state.selectedTab === "tab4" && (
+              <div>tab4</div>
+            )}
+            {this.state.selectedTab === "tab5" && (
+              <div>tab5</div>
+            )}
+          </div>
+        </div>
+      </div>
     );
   }
 }

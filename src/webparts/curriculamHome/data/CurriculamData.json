@@ -1,0 +1,81 @@
+{
+    "learnings": [
+        {
+            "name": "Jumpstart",
+            "serviceLines": [
+                "Audit&Assurance",
+                "Tax"
+            ],
+            "levels": [
+                "Intern",
+                "Associate1",
+                "Associate2"
+            ],
+            "time": "2 hrs",
+            "cpeCreditTime": "2.0",
+            "type": "milestone",
+            "description": "Jumpstart is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work. Jumpstart is a learning program that helps you to get started with your career at EY."
+        },
+        {
+            "name": "TEP Foundation Pathway",
+            "serviceLines": [
+                "Advisory",
+                "ICS"
+            ],
+            "levels": [
+                "Senior Associate1",
+                "Senior Associate2",
+                "Senior Associate3"
+            ],
+            "time": "3 hrs",
+            "cpeCreditTime": "3.0",
+            "type": "technical",
+            "description": "TEP Foundation Pathway is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        },
+        {
+            "name": "Industry Badge",
+            "serviceLines": [
+                "Audit&Assurance",
+                "ICS"
+            ],
+            "levels": [
+                "New Manager",
+                "Manager",
+                "Experience Manager"
+            ],
+            "time": "4 hrs",
+            "cpeCreditTime": "4.0",
+            "type": "badge",
+            "description": "Industry Badge is a learning program that helps you to get started with your career at EY.It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        },
+        {
+            "name": "TEP Foundational Pathway",
+            "serviceLines": [
+                "Advisory",
+                "Tax"
+            ],
+            "levels": [
+                "Senior Manager Director",
+                "PPMD"
+            ],
+            "time": "5 hrs",
+            "cpeCreditTime": "5.0",
+            "type": "pdf",
+            "description": "TEP Foundation Pathway is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        },
+        {
+            "name": "SPFx",
+            "serviceLines": [
+                "Advisory"
+            ],
+            "levels": [
+                "Senior Associate2",
+                "Manager"
+            ],
+            "time": "3 hrs",
+            "cpeCreditTime": "4.0",
+            "type": "badge",
+            "description": "SPFx is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        }
+    ]
+}
