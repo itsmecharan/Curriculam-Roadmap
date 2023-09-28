@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "curriculam-roadmap-client-side-solution",
+    "id": "7fb5dc11-ee18-4ce3-997d-8ac98a6f8820",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "curriculam-roadmap description"
+      },
+      "longDescription": {
+        "default": "curriculam-roadmap description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "curriculam-roadmap Feature",
+        "description": "The feature that activates elements of the curriculam-roadmap solution.",
+        "id": "e9471ddf-a6b0-467a-afcd-ab8885a0c42b",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/curriculam-roadmap.sppkg"
+  }
+}

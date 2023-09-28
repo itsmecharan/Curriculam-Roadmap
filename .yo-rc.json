@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "curriculam-roadmap",
+    "libraryId": "7fb5dc11-ee18-4ce3-997d-8ac98a6f8820",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "curriculam-roadmap",
+    "solutionShortDescription": "curriculam-roadmap description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "curriculam-home-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/curriculamHome/CurriculamHomeWebPart.js",
+          "manifest": "./src/webparts/curriculamHome/CurriculamHomeWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CurriculamHomeWebPartStrings": "lib/webparts/curriculamHome/loc/{locale}.js"
+  }
+}
