@@ -1,6 +1,7 @@
 {
     "learnings": [
         {
+            "id": 1,
             "name": "Jumpstart",
             "serviceLines": [
                 "Audit&Assurance",
@@ -14,9 +15,10 @@
             "time": "2 hrs",
             "cpeCreditTime": "2.0",
             "type": "milestone",
-            "description": "Jumpstart is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work. Jumpstart is a learning program that helps you to get started with your career at EY."
+            "description": "Jumpstart is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work. Jumpstart is a learning program that helps you to get started with your career at Grant Thornton."
         },
         {
+            "id": 2,
             "name": "TEP Foundation Pathway",
             "serviceLines": [
                 "Advisory",
@@ -30,9 +32,10 @@
             "time": "3 hrs",
             "cpeCreditTime": "3.0",
             "type": "technical",
-            "description": "TEP Foundation Pathway is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+            "description": "TEP Foundation Pathway is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
         },
         {
+            "id": 3,
             "name": "Industry Badge",
             "serviceLines": [
                 "Audit&Assurance",
@@ -46,9 +49,10 @@
             "time": "4 hrs",
             "cpeCreditTime": "4.0",
             "type": "badge",
-            "description": "Industry Badge is a learning program that helps you to get started with your career at EY.It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+            "description": "Industry Badge is a learning program that helps you to get started with your career at Grant Thornton.It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
         },
         {
+            "id": 4,
             "name": "TEP Foundational Pathway",
             "serviceLines": [
                 "Advisory",
@@ -61,9 +65,10 @@
             "time": "5 hrs",
             "cpeCreditTime": "5.0",
             "type": "pdf",
-            "description": "TEP Foundation Pathway is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+            "description": "TEP Foundation Pathway is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
         },
         {
+            "id": 5,
             "name": "SPFx",
             "serviceLines": [
                 "Advisory"
@@ -75,7 +80,89 @@
             "time": "3 hrs",
             "cpeCreditTime": "4.0",
             "type": "badge",
-            "description": "SPFx is a learning program that helps you to get started with your career at EY. It is a combination of online and classroom learning that will help you to understand the EY culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+            "description": "SPFx is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        },
+        {
+            "id": 6,
+            "name": "Oracle",
+            "serviceLines": [
+                "Audit&Assurance",
+                "Tax"
+            ],
+            "levels": [
+                "Intern",
+                "Associate1",
+                "Associate2"
+            ],
+            "time": "2 hrs",
+            "cpeCreditTime": "2.0",
+            "type": "milestone",
+            "description": "Oracle is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work. Jumpstart is a learning program that helps you to get started with your career at Grant Thornton."
+        },
+        {
+            "id": 7,
+            "name": "React JS",
+            "serviceLines": [
+                "Advisory",
+                "ICS"
+            ],
+            "levels": [
+                "Senior Associate1",
+                "Senior Associate2",
+                "Senior Associate3"
+            ],
+            "time": "3 hrs",
+            "cpeCreditTime": "3.0",
+            "type": "technical",
+            "description": "React JS is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        },
+        {
+            "id": 8,
+            "name": "TeamsFx",
+            "serviceLines": [
+                "Audit&Assurance",
+                "ICS"
+            ],
+            "levels": [
+                "New Manager",
+                "Manager",
+                "Experience Manager"
+            ],
+            "time": "4 hrs",
+            "cpeCreditTime": "4.0",
+            "type": "badge",
+            "description": "TeamsFx is a learning program that helps you to get started with your career at Grant Thornton.It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        },
+        {
+            "id": 9,
+            "name": "Java Advanced",
+            "serviceLines": [
+                "Advisory",
+                "Tax"
+            ],
+            "levels": [
+                "Senior Manager Director",
+                "PPMD"
+            ],
+            "time": "5 hrs",
+            "cpeCreditTime": "5.0",
+            "type": "pdf",
+            "description": "Java Advanced is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
+        },
+        {
+            "id": 10,
+            "name": "Power Apps",
+            "serviceLines": [
+                "Advisory"
+            ],
+            "levels": [
+                "Senior Associate2",
+                "Manager"
+            ],
+            "time": "3 hrs",
+            "cpeCreditTime": "4.0",
+            "type": "badge",
+            "description": "Power Apps is a learning program that helps you to get started with your career at Grant Thornton. It is a combination of online and classroom learning that will help you to understand the Grant Thornton culture, values, and the way we work. It will also help you to understand the various tools and technologies that you will be using in your day to day work."
         }
     ]
 }
