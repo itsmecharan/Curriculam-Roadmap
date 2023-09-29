@@ -10,7 +10,7 @@ node_modules
 dist
 lib
 release
-solution
+debug
 temp
 .heft
 
